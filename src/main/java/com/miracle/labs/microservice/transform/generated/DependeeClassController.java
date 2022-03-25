@@ -20,11 +20,6 @@ com.monolith.legacy.DependeeClassBridge target = new com.monolith.legacy.Depende
 public String setInternals(@RequestParam("0") String arg0 ,@RequestParam("1") String arg1 ,@RequestParam("2") String arg2 ,@RequestParam("3") String arg3 ,@RequestParam("4") String arg4 ){
 	return target.setInternals(arg0,arg1,arg2,arg3,arg4);
 }
-@PostMapping
-( path="/A", produces="application/json")
-public String setA(@RequestParam("0") String arg0 ){
-	return target.setA(arg0);
-}
 @GetMapping
 ( path="/Internals/{arg0}", produces="application/json")
 public String getInternals(@PathVariable("arg0") String arg0 ){
@@ -35,15 +30,20 @@ public String getInternals(@PathVariable("arg0") String arg0 ){
 public String getProtectedInt(){
 	return target.getProtectedInt();
 }
-@GetMapping
+@PostMapping
 ( path="/A", produces="application/json")
-public String getA(){
-	return target.getA();
+public String setA(@RequestParam("0") String arg0 ){
+	return target.setA(arg0);
 }
 @GetMapping
 ( path="/String", produces="application/json")
 public String getString(){
 	return target.getString();
+}
+@GetMapping
+( path="/A", produces="application/json")
+public String getA(){
+	return target.getA();
 }
 @GetMapping
 ( path="/Int", produces="application/json")

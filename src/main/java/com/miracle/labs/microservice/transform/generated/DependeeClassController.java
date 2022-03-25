@@ -36,14 +36,14 @@ public String getProtectedInt(){
 	return target.getProtectedInt();
 }
 @GetMapping
-( path="/String", produces="application/json")
-public String getString(){
-	return target.getString();
-}
-@GetMapping
 ( path="/A", produces="application/json")
 public String getA(){
 	return target.getA();
+}
+@GetMapping
+( path="/String", produces="application/json")
+public String getString(){
+	return target.getString();
 }
 @GetMapping
 ( path="/Int", produces="application/json")

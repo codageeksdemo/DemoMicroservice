@@ -25,15 +25,15 @@ public String setInternals(@RequestParam("0") String arg0 ,@RequestParam("1") St
 public String getInternals(@PathVariable("arg0") String arg0 ){
 	return target.getInternals(arg0);
 }
-@GetMapping
-( path="/ProtectedInt", produces="application/json")
-public String getProtectedInt(){
-	return target.getProtectedInt();
-}
 @PostMapping
 ( path="/A", produces="application/json")
 public String setA(@RequestParam("0") String arg0 ){
 	return target.setA(arg0);
+}
+@GetMapping
+( path="/ProtectedInt", produces="application/json")
+public String getProtectedInt(){
+	return target.getProtectedInt();
 }
 @GetMapping
 ( path="/String", produces="application/json")

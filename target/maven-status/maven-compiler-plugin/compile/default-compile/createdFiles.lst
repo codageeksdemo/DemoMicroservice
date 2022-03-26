@@ -1,0 +1,14 @@
+com/miracle/demo/communicationmicroservice/CommunicationmicroserviceApplication.class
+com/monolith/legacy/ClassA.class
+com/miracle/labs/transform/generated/tools/RESTClient.class
+com/miracle/labs/transform/generated/tools/RESTClient$1.class
+com/monolith/legacy/DependeeClass.class
+com/miracle/labs/microservice/transform/generated/Response.class
+test/example/demo/TestJson.class
+com/monolith/legacy/DependeeClassBridge.class
+com/miracle/labs/microservice/transform/generated/DependeeClassController.class
+com/miracle/labs/transform/generated/tools/JsonConvertor.class
+com/miracle/demo/communicationmicroservice/service/Hello.class
+com/miracle/labs/transform/generated/tools/RESTClient$Client.class
+com/miracle/labs/microservice/transform/generated/ResponseBuilder.class
+test/example/demo/Test.class
